@@ -1,5 +1,5 @@
 {
-  "name": "react-routing",
+  "name": "react-easy-router",
   "version": "1.0.0",
   "description": "The simplest way to add routing to your React app",
   "type": "module",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yousufkalim/react-routing.git"
+    "url": "git+https://github.com/yousufkalim/react-easy-router.git"
   },
   "keywords": [
     "react",
@@ -33,9 +33,9 @@
   "author": "Yousuf Kalim <yousufkalim@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yousufkalim/react-routing/issues"
+    "url": "https://github.com/yousufkalim/react-easy-router/issues"
   },
-  "homepage": "https://github.com/yousufkalim/react-routing#readme",
+  "homepage": "https://github.com/yousufkalim/react-easy-router#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "commitlint-config-non-conventional": "^1.0.1",
