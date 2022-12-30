@@ -1,6 +1,6 @@
 {
   "name": "react-easy-router",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The simplest way to add routing to your React app",
   "type": "module",
   "source": "src/index.js",
@@ -11,6 +11,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react",
     "dev": "microbundle watch",

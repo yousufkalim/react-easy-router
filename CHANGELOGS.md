@@ -14,6 +14,12 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.1
+
+#### Documentation
+
+- Update README.md
+
 ## v2.0.0
 
 #### Features
