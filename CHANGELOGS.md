@@ -14,6 +14,14 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.2
+
+#### Dependency Updates
+
+- React support for `react@^16.8.0` and later
+- React-DOM support for `react-dom@^16.8.0` and later
+- Added react-router-dom to dependencies
+
 ## v2.0.1
 
 #### Documentation
