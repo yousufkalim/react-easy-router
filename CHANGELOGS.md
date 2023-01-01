@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.3
+
+#### Documentation
+
+- Update README.md
+- Add public awareness to README.md
+
 ## v2.0.2
 
 #### Dependency Updates

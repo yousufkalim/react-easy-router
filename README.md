@@ -1,3 +1,5 @@
+> We are the first generation to feel the sting of climate change, and we are the last generation that can do something about it. Save our planet 🪴
+
 # React Easy Router
 
 - Built on top of react-router-dom
@@ -15,9 +17,7 @@ Install react-easy-router with npm/yarn
 
 ## Examples
 
-#### Routes array
-
-Static routing
+**Routes array**
 
 ```javascript
 const routes = [
@@ -46,7 +46,7 @@ const routes = [
 ];
 ```
 
-#### Dynamic routing
+**Dynamic routing**
 
 ```javascript
 {
@@ -55,7 +55,7 @@ const routes = [
 }
 ```
 
-#### Navigation and redirecting
+**Navigation and redirecting**
 
 ```javascript
 {
@@ -64,7 +64,7 @@ const routes = [
 }
 ```
 
-#### Protected routes
+**Protected routes**
 
 ```javascript
 {
@@ -75,7 +75,7 @@ const routes = [
 }
 ```
 
-#### Nested routing
+**Nested routing**
 
 ```javascript
 {
@@ -92,7 +92,7 @@ const routes = [
 
 ## Usage
 
-#### Here's an example of basic usage
+Here's an example of basic usage
 
 ```javascript
 // src/App.js
@@ -105,7 +105,7 @@ function App() {
 }
 ```
 
-#### Protect with authentication function
+Protect with authentication function
 
 ```javascript
 // src/App.js
@@ -131,7 +131,7 @@ function App() {
 
 ## Props
 
-### Router
+**Router**
 
 | Prop            | Type     | Description                                |
 | --------------- | -------- | ------------------------------------------ |
