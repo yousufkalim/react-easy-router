@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.4
+
+#### Documentation
+
+- Comment Added
+- JSDoc Added
+
 ## v2.0.3
 
 #### Documentation

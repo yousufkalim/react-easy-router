@@ -1,7 +1,16 @@
+/**
+ * Loader component
+ * @author Yousuf Kalim
+ */
 import { Config } from '../Store';
 
+/**
+ * Loader
+ * @returns {JSX.Element}
+ * @constructor Loader
+ */
 function Loader() {
-  const { config } = Config();
+  const { config } = Config(); // Get the config from the store
 
   return (
     <div
@@ -17,6 +26,7 @@ function Loader() {
         alignItems: 'center',
       }}
     >
+      {/* If user has provided the custom loader then show, otherwise show default */}
       <img src={config.loader || 'https://i.imgur.com/FhvNntt.gif'} alt="loader" />
     </div>
   );
