@@ -6,6 +6,11 @@
 - The simplest way to add routing to your React app
 - Pass a JS object to the library, and it will handle all the routing
 
+## Prerequisites
+
+- `react-router-dom@6.4.0` or later must be installed in your project
+- Application must be wrapped in a `BrowserRouter` component
+
 ## Installation
 
 Install react-easy-router with npm/yarn
