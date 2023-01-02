@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.5
+
+#### Bug Fixes
+
+- Remove BrowserRouter usage
+- Added react-router-dom as a peer-dependency
+
 ## v2.0.4
 
 #### Documentation
