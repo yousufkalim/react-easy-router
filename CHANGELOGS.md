@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.1.0
+
+#### Enhancements
+
+- Convert the whole architecture to Typescript
+- Update Eslint rules
+
 ## v2.0.6
 
 #### Documentation
