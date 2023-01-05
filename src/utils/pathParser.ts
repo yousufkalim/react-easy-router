@@ -9,7 +9,7 @@
  * @param child {String} - Child path
  * @returns {string|string} - Path
  */
-export default function pathParser(parent, child) {
+export default function pathParser(parent: string, child: string): string {
   const parentPath = parent.split('/');
   const childPath = child.split('/');
 
