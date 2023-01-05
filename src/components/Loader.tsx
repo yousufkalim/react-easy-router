@@ -2,14 +2,15 @@
  * Loader component
  * @author Yousuf Kalim
  */
+import React, { ReactElement } from 'react';
 import { Config } from '../Store';
 
 /**
  * Loader
- * @returns {JSX.Element}
+ * @returns {ReactElement}
  * @constructor Loader
  */
-function Loader() {
+function Loader(): ReactElement {
   const { config } = Config(); // Get the config from the store
 
   return (
@@ -27,7 +28,7 @@ function Loader() {
       }}
     >
       {/* If user has provided the custom loader then show, otherwise show default */}
-      <img src={config.loader || 'https://i.imgur.com/FhvNntt.gif'} alt="loader" />
+      <img src={config.loader} alt="loader" />
     </div>
   );
 }
