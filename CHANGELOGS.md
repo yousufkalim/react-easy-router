@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.1.1
+
+#### Bug Fixes
+
+- Bug fixes where all the props are required
+- Improve validations
+
 ## v2.1.0
 
 #### Enhancements

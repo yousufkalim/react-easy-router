@@ -1,30 +1,40 @@
-import { ReactNode } from 'react';
+import { ReactNode, ReactElement } from 'react';
 
-export interface RouteProps {
+interface BaseRouteType {
   path: string;
-  navigate?: string;
-  element?: ReactNode;
   protected?: boolean;
   failureRedirect?: string;
   children?: RouteProps[];
 }
 
+interface ElementType extends BaseRouteType {
+  element: ReactElement;
+  navigate?: never;
+}
+
+interface NavigateType extends BaseRouteType {
+  navigate: string;
+  element?: never;
+}
+
+export type RouteProps = ElementType | NavigateType;
+
 export interface UserProps {
   routes: RouteProps[];
-  isAuthenticated: Function;
-  showLoader: boolean;
-  loader: any;
+  isAuthenticated?: Function;
+  showLoader?: boolean;
+  loader?: any;
 }
 
 export interface StoreProps {
   children: ReactNode;
-  isAuthenticated: Function;
-  showLoader: boolean;
-  loader: any;
+  isAuthenticated?: Function;
+  showLoader?: boolean;
+  loader?: any;
 }
 
 interface Config {
-  isAuthenticated: Function;
+  isAuthenticated?: Function;
   showLoader: boolean;
   loader: any;
 }
