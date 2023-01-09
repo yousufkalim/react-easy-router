@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.1.2
+
+#### Enhancements
+
+- Types structure improved
+- Export types from `index.ts` file
+
 ## v2.1.1
 
 #### Bug Fixes

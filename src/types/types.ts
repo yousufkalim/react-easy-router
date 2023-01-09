@@ -1,4 +1,4 @@
-import { ReactNode, ReactElement } from 'react';
+import { ReactElement } from 'react';
 
 interface BaseRouteType {
   path: string;
@@ -18,32 +18,3 @@ interface NavigateType extends BaseRouteType {
 }
 
 export type RouteProps = ElementType | NavigateType;
-
-export interface UserProps {
-  routes: RouteProps[];
-  isAuthenticated?: Function;
-  showLoader?: boolean;
-  loader?: any;
-}
-
-export interface StoreProps {
-  children: ReactNode;
-  isAuthenticated?: Function;
-  showLoader?: boolean;
-  loader?: any;
-}
-
-interface Config {
-  isAuthenticated?: Function;
-  showLoader: boolean;
-  loader: any;
-}
-
-export interface AuthContextInterface {
-  auth: boolean | null;
-  setAuth: Function;
-}
-
-export interface ConfigContextInterface {
-  config: Config;
-}

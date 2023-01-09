@@ -2,11 +2,22 @@
  * Store using context api
  * @author Yousuf Kalim
  */
-import React, { useContext, useState, createContext, ReactElement } from 'react';
-import { AuthContextInterface, ConfigContextInterface, StoreProps } from './types/types';
+import React, { useContext, useState, createContext, ReactElement, ReactNode } from 'react';
 
 // Initializing Create Context Hook
+interface AuthContextInterface {
+  auth: boolean | null;
+  setAuth: Function;
+}
 const authContext = createContext<AuthContextInterface | null>(null);
+
+interface ConfigContextInterface {
+  config: {
+    isAuthenticated?: Function;
+    showLoader: boolean;
+    loader: any;
+  };
+}
 const configContext = createContext<ConfigContextInterface | null>(null);
 
 // We are also initializing useContexts here
@@ -29,6 +40,12 @@ export function Config(): any {
  * @constructor StoreProvider
  */
 // Initializing Store Provider
+interface StoreProps {
+  children: ReactNode;
+  isAuthenticated?: Function;
+  showLoader?: boolean;
+  loader?: any;
+}
 // eslint-disable-next-line react/prop-types
 export function StoreProvider({
   isAuthenticated,

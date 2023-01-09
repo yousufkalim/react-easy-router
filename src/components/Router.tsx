@@ -6,7 +6,7 @@ import React, { ReactElement } from 'react';
 import { Routes } from 'react-router-dom';
 import { StoreProvider } from '../Store';
 import getRoutes from '../utils/getRoutes';
-import { UserProps } from '../types/types';
+import { RouteProps } from '../types/types';
 
 /**
  * Router
@@ -14,6 +14,12 @@ import { UserProps } from '../types/types';
  * @returns {ReactElement}
  * @constructor Router
  */
+export interface UserProps {
+  routes: RouteProps[];
+  isAuthenticated?: Function;
+  showLoader?: boolean;
+  loader?: any;
+}
 export default function Router(props: UserProps): ReactElement {
   return (
     <StoreProvider {...props}>

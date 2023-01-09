@@ -2,8 +2,7 @@
  * Store using context api
  * @author Yousuf Kalim
  */
-import { ReactElement } from 'react';
-import { StoreProps } from './types/types';
+import { ReactElement, ReactNode } from 'react';
 export declare function Auth(): any;
 export declare function Config(): any;
 /**
@@ -15,4 +14,11 @@ export declare function Config(): any;
  * @returns {ReactElement}
  * @constructor StoreProvider
  */
+interface StoreProps {
+    children: ReactNode;
+    isAuthenticated?: Function;
+    showLoader?: boolean;
+    loader?: any;
+}
 export declare function StoreProvider({ isAuthenticated, showLoader, loader, children, }: StoreProps): ReactElement;
+export {};
