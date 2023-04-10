@@ -10,14 +10,17 @@ import Loader from './Loader';
 /**
  * Protected
  * @param failureRedirect {string} - The path to redirect if the user is not authenticated
+ * @param roles
  * @param children {ReactNode} - The component to render if the user is authenticated
  * @returns {ReactElement}
  */
 function Protected({
   failureRedirect = '/',
+  roles,
   children,
 }: {
   failureRedirect?: string;
+  roles?: string[];
   children: ReactNode;
 }): ReactElement {
   const { auth, setAuth } = Auth(); // Get the auth state from the store
@@ -30,8 +33,19 @@ function Protected({
     if (isAuthenticated) {
       isAuthenticated()
         .then((res: any) => {
-          // If the user is authenticated then set the auth state to true
-          setAuth(res);
+          if (res) {
+            if (roles?.length && roles.includes(res.role)) {
+              // If the user is authenticated then set the auth state to true
+              return setAuth(true);
+            } else if (!roles?.length) {
+              // If the user is authenticated then set the auth state to true
+              setAuth(true);
+            } else {
+              setAuth(false);
+            }
+          } else {
+            setAuth(false);
+          }
         })
         .catch(() => setAuth(false)); // If the user is not authenticated then set the auth state to false
     } else {

@@ -25,7 +25,11 @@ export default function elementParser(route: RouteProps): ReactElement {
       <Route
         key={route.path}
         path={route.path}
-        element={<Protected failureRedirect={route.failureRedirect}>{route.element}</Protected>}
+        element={
+          <Protected failureRedirect={route.failureRedirect} roles={route.roles}>
+            {route.element}
+          </Protected>
+        }
       />
     );
   }

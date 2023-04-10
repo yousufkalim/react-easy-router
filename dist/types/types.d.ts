@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 interface BaseRouteType {
     path: string;
     protected?: boolean;
+    roles?: string[];
     failureRedirect?: string;
     children?: RouteProps[];
 }
