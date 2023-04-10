@@ -1,6 +1,6 @@
 {
   "name": "react-easy-router",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "The simplest way to add routing to your React app",
   "type": "module",
   "source": "src/index.ts",

@@ -14,6 +14,12 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.2.0
+
+#### Features
+
+- Added support to check auth on multiple roles
+
 ## v2.1.2
 
 #### Enhancements
