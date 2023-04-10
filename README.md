@@ -76,6 +76,7 @@ const routes = [
   path: '/admin',
   element: <Admin />,
   protected: true,
+  roles: ["admin", 'manager'], // Optional: Role specific screen
   failureRedirect: '/admin/login', // Optional: Default is '/'
 }
 ```
@@ -124,7 +125,7 @@ function App() {
     const token = localStorage.getItem('token');
 
     if (token) {
-      return true;
+      return { success: true, role: 'admin' };
     } else {
       return false;
     }
